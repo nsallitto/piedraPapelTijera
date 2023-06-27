@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --clr-green : #b4df37;
+    --clr-grey : #666666;
+    --clr-ligth : #b4debe;
+}
+
+body{
+    background-color: var(--clr-grey);
+    color: var(--clr-green);
+}
+
+header{
+    background-color: var(--clr-green);
+    color: var(--clr-grey);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0 0 2rem 2rem;
+    font-size: 1.3rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.puntuacion{
+    margin-top: 4rem;
+    background-color: var(--clr-green);
+    color: var(--clr-grey);
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-grey);
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+}
+
+.nombre{
+    position: absolute;
+    color: var(--clr-green);
+    background-color: var(--clr-grey);
+    border-radius: .5rem;
+    border: 2px solid var(--clr-green);
+    padding: .3rem;
+    line-height: 1;
+
+}
+.nombreJugador{
+    right: 85%;
+}
+.nombreComputadora{
+    left: 85%;
+}
+.puntos{
+    font-size: 1.5rem;
+    
+}
+.elijeArma{
+    margin-bottom: 3rem;
+}
+.elijeArma h2{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.armas{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.arma{
+    font-size: 1rem;
+    background-color: var(--clr-ligth);
+    border: 0;
+    padding: .2rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.eleccionJugador{
+    background-color: var(--clr-green);
+    color: var(--clr-grey);
+    font-weight: 600;
+    border-radius: .2rem;
+    padding: .1rem;
+    
+}
+.eleccionComputadora{
+    background-color: var(--clr-green);
+    color: var(--clr-grey);
+    font-weight: 600;
+    border-radius: .2rem;
+    padding: .1rem;
+}
+.reiniciar{
+    border: 0;
+    font-weight: 600;
+    background-color: var(--clr-ligth);
+    border-radius: .5rem;
+    padding: .3rem 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+.disabled{
+    display: none;
+}

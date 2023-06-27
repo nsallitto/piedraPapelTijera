@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiedraPapelTijera</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Piedra, papel o tijera</h1>
+    </header>  
+    <main>
+        <div class="puntuacion" id="puntuacion">
+            <p class="nombre nombreJugador">Jugador</p>
+            <p class="nombre nombreComputadora">Computadora</p>
+            <p class="puntos">
+                <span id="puntosJugador">0</span>
+                <span>-</span>
+                <span id="puntosComputadora">0</span>
+            </p>
+        </div>
+        <div class="elijeArma" id="elijeArma">
+            <h2>Elije tu arma</h2>
+            <div class="armas">
+                <button class="arma"id="piedra">piedra</button>
+                <button class="arma"id="papel">papel</button>
+                <button class="arma"id="tijera">tijera</button>
+            </div>
+        </div>
+        <div class="eleccion disabled" id="eleccion">
+            <p>
+                Usaste <span class="eleccionJugador" id="eleccionJugador">PAPEL</span><br>
+                y la computadora uso <span class="eleccionComputadora" id="eleccionComputadora">PIEDRA</span>
+            </p>
+            <p class="disabled" id="ganasteUnPunto" >GANASTE EL PUNTO!</p>
+            <p class="disabled" id="perdisteUnPunto" >PERDISTE EL PUNTO!</p>
+            <p class="disabled" id="empate" >EMPATE!</p>
+        </div>
+        <button class="reiniciar disabled" id="reiniciar">Reiniciar juego</button>
+    </main>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
